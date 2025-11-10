@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+#  React Account Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple yet functional **React application** built as part of the **React Internship Practical Task**.  
+It allows users to **register, log in, view, and edit their account information**, using **Bootstrap 5** for design and **LocalStorage** for data persistence.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+**User Registration**  
+- Create a new account with name, email, and password  
+- Password must be **at least 6 characters**, include **1 capital letter** and **1 number**  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Login System**  
+- Validate user credentials  
+- Redirects to the home page upon successful login  
+- Shows personalized welcome message  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Account Settings Page**  
+- Update user profile details  
+- Password validation included  
+- Redirects back to home page after saving  
 
-### `npm test`
+**Bootstrap UI**  
+- Fully responsive  
+- Clean and professional design  
+- Show/Hide password toggle on all password fields  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Routing with React Router v6**  
+- `/` → Landing page  
+- `/register` → Register new user  
+- `/login` → Login user  
+- `/home` → Dashboard after login  
+- `/account` → Account settings page  
 
-### `npm run build`
+**LocalStorage Integration**  
+- User data and login session stored locally (no backend required)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 18**  
+- **Bootstrap 5**  
+- **React Router v6**  
+- **JavaScript (ES6+)**  
+- **LocalStorage API**
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── App.js
+├── index.js
+│
+├── components/
+│   └── Navbar.jsx
+│
+├── pages/
+│   ├── Landing.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── Home.jsx
+│   └── Account.jsx
+│
+└── utils/
+    └── auth.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##  Installation & Setup
 
-## Learn More
+Follow these steps to run the project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1 - Clone the Repository
+```bash
+git clone https://github.com/Pavan-makwana/react-account-app.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2 - Navigate into the Folder
+```bash
+cd react-account-app
+```
 
-### Code Splitting
+### 3 - Install Dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4 - Run the Application
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+The app will run locally at  [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+##  Password Validation Rules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Minimum **6 characters**  
+ Must contain **1 uppercase letter**  
+ Must contain **1 numeric digit**  
 
-### Deployment
+ Example of valid password:  
+```
+React123
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+---
+
+##  Deployment
+To build and deploy your app:
+```bash
+npm run build
+```
+Then host the `/build` folder on **GitHub Pages**, **Vercel**, or **Netlify**.
+
+---
+
+##  Submission Details
+
+ Push your final code to your GitHub repository  
+ Include this README.md file  
+ Submit the **GitHub Repo Link** via the **Google Form** shared with your test instructions  
+
+---
+
+##  Author
+**Name:**  Pavan Makwana  
+**Internship:** React Developer Internship Task  
+**Email:** pavan561981@gmail.com  
+**GitHub:** [@Pavan-makwana](https://github.com/Pavan-makwana)
+
+---
+
+##  Conclusion
+
+This project demonstrates the ability to:
+- Work with **React components**
+- Implement **client-side routing**
+- Use **Bootstrap for styling**
+- Handle **user data and validation**
+- Manage state and navigation effectively
